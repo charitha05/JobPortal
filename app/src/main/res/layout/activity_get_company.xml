@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EmployerDetailsActivity">
+
+    <!-- Company Name -->
+    <EditText
+        android:id="@+id/editTextCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"/>
+
+    <!-- Year of Batch -->
+    <EditText
+        android:id="@+id/editTextYearOfBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year of Batch"
+        android:inputType="number"/>
+
+    <!-- Role -->
+    <EditText
+        android:id="@+id/editTextRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Role"/>
+
+    <!-- CTC (Cost to Company) -->
+    <EditText
+        android:id="@+id/editTextCTC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CTC"
+        android:inputType="numberDecimal"/>
+
+    <!-- Apply By Date (You can use a DatePicker as before) -->
+    <EditText
+        android:id="@+id/editTextApplyByDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apply By Date"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog"/>
+
+
+    <!-- Type (You can use a Spinner to select type) -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Status (You can use a RadioGroup or Spinner to select status) -->
+    <!-- For example, using RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radioGroupStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButtonInProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"/>
+        <RadioButton
+            android:id="@+id/radioButtonCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"/>
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textStyle="bold"/>
+</LinearLayout>

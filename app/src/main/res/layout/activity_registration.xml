@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegistrationActivity">
+
+    <!-- activity_registration.xml -->
+    <!-- Existing fields here -->
+
+    <EditText
+        android:id="@+id/editText_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Add more fields for DOB, Current Semester, CGPA, Pass Out Year, Mobile/Email, Address, etc. -->
+    <EditText
+        android:id="@+id/editText_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Semester"
+        android:inputType="number"
+        android:maxLength="2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_cgpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CGPA"
+        android:inputType="numberDecimal"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_pass_out_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pass Out Year"
+        android:inputType="number"
+        android:maxLength="4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="pickDate"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User name"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/editText_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        tools:ignore="MissingConstraints" />
+    <RadioGroup
+        android:id="@+id/radioGroup_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <RadioButton
+            android:id="@+id/radioButton_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+        <RadioButton
+            android:id="@+id/radioButton_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <RadioButton
+            android:id="@+id/radioButton_internship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internship" />
+        <RadioButton
+            android:id="@+id/radioButton_fulltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full-time" />
+        <RadioButton
+            android:id="@+id/radioButton_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Register"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/btn_background_1"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/app_name"
+        android:hint="Already registered? Click here"
+        android:text="Already registered? Click here"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
